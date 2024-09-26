@@ -1,0 +1,16 @@
+.container {
+    width: 90%;
+    margin: 0 5%;
+    /* min-height: 100vh; */
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 92%;
+        margin: 0 4%;
+        height: fit-content;
+        padding-bottom: 25px;
+    }
+
+
+}

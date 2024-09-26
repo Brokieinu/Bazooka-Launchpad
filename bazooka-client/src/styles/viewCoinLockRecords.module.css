@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 25px 0;
+
+}
+
+.container>h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 1em 0;
+
+}
+
+.tableHead {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+
+.tableData {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #253042;
+    border-radius: 10px;
+}
+
+.tableDataRow {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.tableDataRow span,
+.tableHead span {
+    text-align: center;
+    width: 33%;
+    color: white;
+    font-size: 1rem;
+}
+
+.tableDataRow span:first-of-type,
+.tableHead span:first-of-type {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.tableDataRow span:last-of-type,
+.tableHead span:last-of-type {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.viewButton {
+    color: #0094FF;
+
+}
+
+.viewButton:hover {
+    text-decoration: none;
+
+}
+
+.tableData_bg_even {
+    background-color: #1C2736;
+}
+
+@media (max-width: 767px) {
+
+    .tableDataRow span,
+    .tableHead span {
+
+        width: 40%;
+        font-size: 14px;
+
+
+    }
+
+    .tableDataRow span:last-of-type,
+    .tableHead span:last-of-type {
+
+        width: 20%;
+
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .tableDataRow span,
+    .tableHead span {
+
+        font-size: 12px;
+
+    }
+}

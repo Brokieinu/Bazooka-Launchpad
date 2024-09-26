@@ -1,0 +1,251 @@
+.projectCard {
+  width: 100%;
+  height: auto;
+  background-color: #101A2A;
+  color: white;
+  border: 1px solid #2A2A2A;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure no overflow issues */
+  padding: 10px 0;
+}
+
+.info {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info>img {
+  width: 65%;
+  height: 65%;
+}
+
+.statusWrapper {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.status {
+  height: 25px;
+  padding: 0 10px;
+  background-color: #213451;
+  border-radius: 25px;
+  margin-right: 2.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #00FF38;
+  position: relative;
+  padding-left: 10px;
+}
+
+.status span::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #00FF38;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.percentage {
+  height: 25px;
+  width: auto;
+  max-width: 100px;
+  background-color: #0093FF4D;
+  border-radius: 25px;
+  margin-left: 2.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage span {
+  font-size: 12px;
+  color: #0088CB;
+  padding-left: 10px;
+}
+
+.infoTextWrapper {
+  width: 100%;
+}
+
+.infoTextWrapper h2 {
+  color: white;
+  padding-top: 1rem;
+}
+
+.infoTextWrapper h4 {
+  padding: 0.5rem 0 1rem;
+  font-weight: 400;
+  font-size: 12px;
+  color: #949494;
+}
+
+.infoTextWrapper h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #256FFF;
+}
+
+.infoTextWrapper h5 {
+  padding: 0.5rem 0;
+  font-weight: 400;
+  font-size: 11px;
+  color: #949494;
+}
+
+.infoTextSquare {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #838383;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.liquidity,
+.offered {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.liquidity span:first-of-type,
+.offered span:first-of-type {
+  font-size: 12px;
+  color: #C8C8C8;
+}
+
+.liquidity span:last-of-type {
+  font-weight: 600;
+}
+
+.progress {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.progressBarNormal {
+  width: 100%;
+  height: 10px;
+  border: 1px solid #29243F;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.progressBarYellow {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(to right, #FF8A00, #D0A713);
+}
+
+.progressBarNormal:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  background-color: #443D64;
+  border-radius: 3px;
+  padding: 3px 5px;
+  top: -300%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #443D64 transparent transparent transparent;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.buttons button {
+  width: 49%;
+  padding: 15px 0;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.buttons button img {
+  margin-right: 0.5rem;
+}
+
+.buttons button:first-of-type {
+  background-color: #0088CB;
+  border-radius: 5px;
+}
+
+.buttons button:last-of-type {
+  background-color: #101A2A;
+  border-radius: 5px;
+  border: 3px solid #29243F;
+}
+
+.chart {
+  margin-right: 0.5rem;
+}
+
+
+@media (max-width: 767px) {
+  .info {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info>img {
+    width: 65%;
+    height: 38%;
+  }
+}

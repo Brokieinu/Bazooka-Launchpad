@@ -1,0 +1,108 @@
+.card {
+  width: 100%;
+  height: auto;
+  background-color: #101a2a;
+  border-radius: 10px;
+  border: 1px solid #5a5a5a;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0;
+  color: white;
+}
+
+.chartWrapper {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.textWrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.textWrapper > div {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.textWrapper > div span:first-of-type {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #ccc;
+}
+
+.textWrapper > div span:last-of-type {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .textWrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    padding: 25px 10px;
+  }
+
+  .textWrapper {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 757px) {
+  .card > div {
+    flex-direction: column; /* Stack chart and text on smaller screens */
+    align-items: center;
+  }
+
+  .chartWrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .textWrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .card > div {
+    flex-direction: column; /* Stack chart and text on the smallest screens */
+    align-items: center;
+  }
+
+  .chartWrapper {
+    margin-top: 10px;
+  }
+
+  .textWrapper > div {
+    width: 100%;
+    margin: 0 5%;
+  }
+}

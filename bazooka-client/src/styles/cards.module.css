@@ -1,0 +1,122 @@
+.container {
+    color: white;
+    padding-top: 3rem; /* py-12 */
+    padding-bottom: 3rem; /* py-12 */
+}
+
+.title {
+    font-size: 3rem; /* text-5xl */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+    text-align: left; /* text-left */
+    margin-left: 6rem; /* ml-24 */
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+/* Responsive title for smaller screens */
+.titleCenter {
+    text-align: center; /* max-md:text-center */
+    margin-right: 6rem; /* max-md:mr-24 */
+}
+
+.gridContainer {
+    max-width: 112rem; /* max-w-7xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 2rem; /* gap-8 */
+}
+
+/* Responsive grid layout for medium screens and above */
+.gridContainerMd {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+}
+
+/* Responsive card styling */
+.card {
+    background-color: #101A2A; /* bg-customBlue2 */
+    padding: 2.5rem; /* p-10 */
+    border-radius: 0.5rem; /* rounded-lg */
+    margin: 5%;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect for larger screens */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image container for the cards */
+.imageContainer {
+    width: 5rem; /* w-20 */
+    height: 5rem; /* h-20 */
+    border-radius: 50%; /* rounded-full */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.titleText {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    text-align: center; /* text-center */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.description {
+    text-align: center; /* text-center */
+    color: #94a3b8; /* text-gray-400 */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Adjust layout and font sizes for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem; /* Reduce title size for smaller screens */
+        margin-left: 20; /* Remove left margin */
+        text-align: center; /* Center the title */
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        gap: 1rem; /* Reduce gap between items */
+    }
+
+    .card {
+        margin: 2.5%; /* Reduce margin around cards */
+        padding: 1.5rem; /* Reduce padding inside cards */
+    }
+
+    .imageContainer {
+        width: 4rem; /* Reduce image size */
+        height: 4rem; /* Reduce image size */
+        margin-left: 37%;
+    }
+
+    .titleText {
+        font-size: 1.125rem; /* Reduce title text size */
+        margin-top: 12%;
+    }
+}
+
+/* Adjust layout and font sizes for extra small screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.75rem; /* Further reduce title size */
+        margin-bottom: 1.5rem; /* Reduce bottom margin */
+    }
+
+    .card {
+        padding: 1rem; /* Further reduce padding */
+    }
+
+    .imageContainer {
+        width: 3rem; /* Further reduce image size */
+        height: 3rem; /* Further reduce image size */
+    }
+
+    .titleText {
+        font-size: 1rem; /* Further reduce title text size */
+    }
+}

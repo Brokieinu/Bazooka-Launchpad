@@ -1,0 +1,265 @@
+.container {
+    position: relative;
+    width: 90%;
+    height: 55vh; /* Make it cover the full viewport height */
+    background-image: url('/announcement.png'); /* Path to your image */
+    background-size: 100%; /* Scale the image down to 100% of its original size */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    background-color: #101A2A;
+    border-radius: 0.4%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+/* Responsive container for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        padding: 2rem;
+        background-size: 300%;
+    }
+}
+
+.title {
+    font-size: 3rem; /* text-5xl */
+    color: white; /* text-white */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+    text-align: center; /* text-center */
+}
+
+/* Responsive title for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem; /* Reduce title size for smaller screens */
+        margin-top: 1rem;
+    }
+}
+
+.textContainer {
+    text-align: center;
+    margin-left: 9rem; /* md:ml-36 */
+}
+
+/* Responsive text container */
+@media (max-width: 768px) {
+    .textContainer {
+        margin-left: 0;
+        padding: 0 2rem;
+    }
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem; /* md:ml-28 */
+}
+
+/* Responsive flex container */
+@media (max-width: 768px) {
+    .flexContainer {
+        margin-left: 0;
+        align-items: center;
+    }
+}
+
+.comingSoonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Responsive comingSoonContainer */
+@media (max-width: 768px) {
+    .comingSoonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.comingText {
+    color: white; /* text-white */
+    font-size: 2.5rem; /* text-4xl */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+    margin-right: 0.5rem; /* Add some spacing between "Coming" and "Soon" */
+    margin-left: 37%;
+}
+
+/* Responsive comingText */
+@media (max-width: 768px) {
+    .comingText {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.soonText {
+    color: #101A2A; /* text-customBlue */
+    font-size: 2.5rem; /* text-4xl */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+    margin-left: 35%;
+}
+
+/* Responsive soonText */
+@media (max-width: 768px) {
+    .soonText {
+        margin-left: 0;
+    }
+}
+
+.paragraph {
+    color: white; /* text-white */
+    margin-top: 0.25rem; /* mt-1 */
+    margin-left: 14rem; /* ml-10 */
+}
+
+/* Responsive paragraph */
+@media (max-width: 768px) {
+    .paragraph {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+.applyButton {
+    background-color: #101A2A; /* bg-customBlue */
+    color: white; /* text-white */
+    padding: 0.75rem 12rem; /* py-3 px-48 */
+    border-radius: 0.5rem; /* rounded-lg */
+    font-weight: bold;
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* Responsive applyButton */
+@media (max-width: 768px) {
+    .applyButton {
+        padding: 0.75rem 4rem; /* Reduce padding for smaller screens */
+    }
+}
+
+.button {
+    margin-left: 30%;
+}
+
+/* Responsive button */
+@media (max-width: 768px) {
+    .button {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile Styles */
+.mobileContainer {
+    display: block; /* md:hidden */
+}
+
+.mobileImageContainer {
+    position: relative;
+    margin: 0 auto 2.5rem; /* mx-auto mb-10 */
+    max-width: 100%; /* max-w-screen-xl */
+    margin-left: 7rem; /* md:ml-28 */
+}
+
+/* Responsive mobileImageContainer */
+@media (max-width: 768px) {
+    .mobileImageContainer {
+        margin-left: 0;
+    }
+}
+
+.mobileImage {
+    background-color: #1e3a8a; /* bg-customBlue */
+    border: 1px solid #4b5563; /* border-gray-800 */
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden;
+}
+
+.mobileTextContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileFlexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem; /* md:ml-28 */
+}
+
+/* Responsive mobileFlexContainer */
+@media (max-width: 768px) {
+    .mobileFlexContainer {
+        margin-left: 0;
+    }
+}
+
+.mobileComingText {
+    color: white; /* text-white */
+    font-size: 2.5rem; /* text-4xl */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+    margin-right: 0.5rem; /* Add some spacing between "Coming" and "Soon" */
+}
+
+/* Responsive mobileComingText */
+@media (max-width: 768px) {
+    .mobileComingText {
+        font-size: 2rem; /* Reduce text size for smaller screens */
+    }
+}
+
+.mobileSoonText {
+    color: #1e3a8a; /* text-customBlue */
+    font-size: 2.5rem; /* text-4xl */
+    font-family: 'Jolly Lodger', cursive; /* font-jolly-lodger */
+}
+
+/* Responsive mobileSoonText */
+@media (max-width: 768px) {
+    .mobileSoonText {
+        font-size: 2rem; /* Reduce text size for smaller screens */
+    }
+}
+
+.mobileParagraph {
+    color: white; /* text-white */
+    margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Responsive mobileParagraph */
+@media (max-width: 768px) {
+    .mobileParagraph {
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+.mobileApplyButton {
+    background-color: #1e3a8a; /* bg-customBlue */
+    color: white; /* text-white */
+    padding: 0.75rem 12rem; /* py-3 px-48 */
+    border-radius: 0.5rem; /* rounded-lg */
+    font-weight: bold;
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* Responsive mobileApplyButton */
+@media (max-width: 768px) {
+    .mobileApplyButton {
+        padding: 0.75rem 4rem; /* Reduce padding for smaller screens */
+    }
+}

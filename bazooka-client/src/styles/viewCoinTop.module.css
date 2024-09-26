@@ -1,0 +1,155 @@
+.topContainer {
+    width: 100%;
+    height: 120px;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.topContainerLeft {
+    height: 100%;
+    width: 75%;
+    display: flex;
+}
+
+.imgWrapper {
+    width: 12%;
+    border-radius: 50%;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+.imgWrapper img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.textWrapper h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.textWrapper h4 {
+    font-size: 16px;
+    color: #A7A7A7;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.textWrapper p {
+    font-size: 16px;
+    color: #A7A7A7;
+    font-weight: 400;
+    padding: 5px 5px 0 0;
+}
+
+.topContainerRight {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.topContainerRight>span {
+    width: 35px;
+    height: 38px;
+    background-color: #2F2F33;
+    border-radius: 3px;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+
+    .imgWrapper {
+
+        width: 15%;
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+
+    .imgWrapper {
+
+        width: 20%;
+    }
+}
+
+@media (max-width: 879px) {
+
+    .imgWrapper {
+        width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .topContainer {
+        height: auto;
+        margin-top: 5vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .topContainerLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgWrapper {
+        width: 8em;
+        height: 8em;
+        margin-right: none;
+        margin: 15px 0;
+    }
+
+    .imgWrapper img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .textWrapper h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .textWrapper h4 {
+        font-size: 14px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .textWrapper p {
+        font-size: 14px;
+        color: #A7A7A7;
+        text-align: center;
+        font-weight: 400;
+        padding: 5px 5px 0 0;
+    }
+
+    .topContainerRight {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0 15px;
+    }
+
+    .topContainerRight>span:first-of-type {
+        margin-right: 1rem;
+    }
+
+    .topContainerRight>span:last-of-type {
+        margin-left: 1rem;
+    }
+}

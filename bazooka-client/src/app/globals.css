@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  background-color: #12141d;
+}
+
+main {
+  position: relative;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.top_right_gradient {
+  height: 90vh;
+  position: absolute;
+  width: 5%;
+  background-image: linear-gradient(#085364, #1845a300);
+  filter: blur(30px);
+  top: 5em;
+  right: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.top_left_gradient {
+  height: 50vh;
+  position: absolute;
+  width: 5%;
+  background-image: linear-gradient(#085364, #1845a300);
+  filter: blur(30px);
+  top: 0;
+  left: 0;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 5%;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 92%;
+    margin: 0 4%;
+    height: fit-content;
+    padding-bottom: 25px;
+  }
+  .scrollOff {
+    overflow: hidden;
+  }
+  .scrollOn {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-jolly-lodger {
+    font-family: 'Jolly Lodger', cursive;
+  }
+  .underline-orange {
+    position: relative;
+    display: inline-block;
+}
+.underline-orange::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -2px;
+    left: 0;
+    top: 110%;
+    background: linear-gradient(90deg, #FF8A00 0%, #D0A713 100%);
+    visibility: visible;
+    transform: scaleX(1);
+}
+.gradient-text {
+  background: linear-gradient(90deg, #FF8A00 0%, #D0A713 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+}

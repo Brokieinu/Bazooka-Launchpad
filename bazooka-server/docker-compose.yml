@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: brokiedev/brokie-fund-backend:dev-${BUILD_VERSION}
+    ports:
+      - "3002:3002"
+    volumes:
+      - .:/workspace
+    env_file:
+      - .env

@@ -1,0 +1,12 @@
+.mainContainer {
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .mainContainer {
+        margin-top: 20%;
+    }
+  }

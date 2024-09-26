@@ -1,0 +1,153 @@
+.container {
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.claimsTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.claimsTop h2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.claimsTop h2 span {
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+}
+
+.claimsTop h2 img {
+    margin-left: 2rem;
+    width: 20px;
+    height: 20px;
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.buttonWrapper button {
+    cursor: pointer;
+    color: white;
+    padding: 15px 30px;
+    /* background-color: black; */
+    background-color: transparent;
+    border: none;
+
+}
+
+.buttonWrapper button:last-of-type {
+    border-left: none;
+}
+
+.buttonWrapper button:first-of-type {
+    border-right: none;
+}
+
+.buttonWrapper span {
+    background: linear-gradient(to right, #FF8A00, #D0A713);
+    width: 50%;
+    height: 5px;
+    pointer-events: none;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+
+}
+
+.left_active {
+    transition: all 0.5s;
+    left: 0;
+}
+
+.right_active {
+    left: 50%;
+    transition: all 0.5s;
+}
+
+.cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: space-between;
+    gap: 5em;
+    padding: 50px 0;
+}
+
+@media (max-width: 1199px) {
+
+    .cardsWrapper {
+        gap: 3em;
+
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .container {
+        width: 92%;
+        margin: 0 4%;
+    }
+
+    .claimsTop {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .claimsTop h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .claimsTop h2 span {
+        text-align: center;
+
+    }
+
+    .claimsTop h2 img {
+        display: none;
+    }
+
+    .cardsWrapper {
+        gap: 2em;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 767px) {
+    .cardsWrapper {
+        gap: 25px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 5%;
+        padding-bottom: 50px;
+        overflow: hidden;
+        margin-top: 20%;
+    }
+}
